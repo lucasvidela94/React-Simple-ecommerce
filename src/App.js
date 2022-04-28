@@ -22,7 +22,7 @@ function App() {
       nombre: "Vans Pink Edition",
       precio: 475,
     },
-    { id: 4, image: Shirt, nombre: "T-shirt Guibli Studios", precio: 400 },
+    { id: 4, image: Shirt, nombre: "T-shirt Ghibli Studios", precio: 400 },
     {
       id: 5,
       image: Cargo,
