@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500&display=swap');
+/* Estilos globales */
+* {
+    margin: 0;
+  }
+  * body {
+    background-color: rgb(234, 249, 217);
+    font-family: "Akshar",sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+  }
+
+  /* Contenedor entero */
+  .container {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  /* Estilos del Header */
+  .container__header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 50px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(101, 50, 57);
+    color: white;
+    font-family: "Akshar", cursive;
+  }
+  .container__header__title {
+    cursor: default;
+    font-size: 25px;
+  }
+  .container__header__menu {
+    padding-left: 5px;
+  }
+
+  /* Estilos del carrito */
+  .container__header__cartDiv {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 50px;
+    padding-right: 5px;
+  }
+
+  .container__header__cartDiv--count {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 100%;
+    cursor: default;
+    background-color: orange;
+  }
+  .container__header__cartDiv--list {
+    display: none;
+    min-width: 100px;
+    right: 0;
+    top: 50px;
+    position: absolute;
+    z-index: 999;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  .container__header__cartDiv--list ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 ;
+    margin-top: -45px;
+    margin-bottom: -5px; 
+    margin-right: -20px;
+    justify-items: auto;
+    transform:scale(0.7);
+
+  }
+
+  
+  .container__header__cartDiv--list ul button{
+    display: inline-block;
+    padding: 02px;
+    margin: 06px;
+    
+  }
+  .container__header__cartDiv--list img {
+    max-width: 100px;
+  }
+
+  /* Contenedor del cuerpo */
+.container__body{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;        
+  min-width: 100vw;
+  background-color: rgb(234, 249, 217);
+}
+
+.container__body__message{
+  height: 20vh;
+  padding-top: -150px;
+  font-size: 40px;
+  font-family: 'Akshar', sans-serif;
+  color: black;
+}
+
+.container__body__listProducts{
+   display: flex;
+   flex-flow: row;
+   min-width: 100vw;
+   align-content: center;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.container__body__products{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    min-height: 200px;
+    list-style: none;
+    background-color: rgb(226, 212, 186);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 02px #000;
+    transition: 0.4s;
+}
+.container__body__products:hover{
+    transform: translateY(20px);
+}
+.container__body__products--image{
+    margin-top: -50px;
+    max-width: 250px;
+    max-height: 150px;
+}
+.container__body__products--nombre .container__body__products--precio{    
+    color: white;
+}
+.container__body__products--nombre{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+.container__body__products--precio{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(175, 122, 109);
+    text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
+}
+
+/* Container de la seccion footer */
+.container__footer{
+    font-size: 25px;
+}
+
+/* Estilos de los botones */
+
+
+.container__body__products--btnAdd{
+    cursor: pointer;
+    color: white;
+    border: 0;
+    background-color: rgb(175, 122, 109);
+    text-shadow: 01px 0px black;
+    font-family: 'Akshar', cursive;
+    font-size: 01.3rem;
+    box-shadow: 0 0 05px 02px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.container__content__burgers--btnDel{
+    cursor: pointer;
+    color: white;
+    border: 0;
+    background-color: rgb(255, 0, 0);
+    text-shadow: 01px 0px black;
+    font-family: 'Akshar', cursive;
+    font-size: 01.4rem;
+    box-shadow: 0 0 05px 02px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    margin-right: 10px;
+
+  }
+
+.container__content__products--btnClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Akshar', cursive;
+    color: white;
+    background-color: transparent;
+    font-size: 01.2rem;
+
+  }
+
+.container__header__cartDiv--btnCart{
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url('../images/cart.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+.container__header__menu--button{
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url('../images/menu.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    width: 20px;
+    height: 20px;
+
+}
